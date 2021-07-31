@@ -30,6 +30,7 @@ plugin_collection(LatencyTest)
 
 target_link_libraries(qv2ray
     PRIVATE
+        # QvPlugin-Command # Command plugin may crash
         QvPlugin-TrojanGo
         QvPlugin-NaiveProxy
         QvPlugin-LatencyTest)
