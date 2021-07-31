@@ -6,7 +6,8 @@ set(QV2RAY_STATIC_PLUGINS ON)
 set(BUILD_SHARED_LIBS OFF)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-set(CMAKE_PREFIX_PATH "/tmp/qt-build/static-installed/lib/cmake")
+# Properly set CMake prefix path
+# set(CMAKE_PREFIX_PATH "/tmp/qt-build/static-installed/lib/cmake")
 
 find_package(Qt6 COMPONENTS Core Gui Widgets Network)
 add_subdirectory(QvPersonal)
