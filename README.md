@@ -1,4 +1,4 @@
 # QvMeta
 
- A meta-repository for building a static QvPersonal.
+A meta-repository for building QvPersonal statically.
  
