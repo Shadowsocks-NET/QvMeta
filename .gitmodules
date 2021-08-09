@@ -1,6 +1,0 @@
-[submodule "QvPersonal"]
-	path = QvPersonal
-	url = https://github.com/moodyhunter/QvPersonal
-[submodule "Plugins"]
-	path = Plugins
-	url = https://github.com/moodyhunter/Plugins
