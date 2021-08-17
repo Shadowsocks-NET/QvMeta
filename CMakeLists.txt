@@ -24,14 +24,7 @@ macro(plugin_collection name)
     endif()
 endmacro()
 
-plugin_collection(Command)
-plugin_collection(Trojan-Go)
+#plugin_collection(Command)
+#plugin_collection(Trojan-Go)
 plugin_collection(NaiveProxy)
 plugin_collection(LatencyTest)
-
-target_link_libraries(qv2ray
-    PRIVATE
-        # QvPlugin-Command # Command plugin may crash
-        QvPlugin-TrojanGo
-        QvPlugin-NaiveProxy
-        QvPlugin-LatencyTest)
