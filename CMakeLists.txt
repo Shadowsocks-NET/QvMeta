@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(QvPersonal-MetaRepo)
+project(QvMeta)
 
 set(QV2RAY_STATIC_PLUGINS ON)
 set(BUILD_SHARED_LIBS OFF)
@@ -10,14 +10,14 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 # set(CMAKE_PREFIX_PATH "/tmp/qt-build/static-installed/lib/cmake")
 
 find_package(Qt6 COMPONENTS Core Gui Widgets Network)
-add_subdirectory(QvPersonal)
+add_subdirectory(Qv2ray)
 
 option(ALL_PLUGINS "Build with all plugins" ON)
 
 macro(plugin_collection name)
     option("HAS_PLUGIN_${name}" ${ALL_PLUGINS})
     if(${HAS_PLUGIN_${name}} OR ALL_PLUGINS)
-        add_subdirectory(Plugins/QvPlugin-${name})
+        add_subdirectory(QvPlugins/QvPlugin-${name})
         message("|| State || QvPlugin-${name}: ON")
     else()
         message("|| State || QvPlugin-${name}: OFF")
