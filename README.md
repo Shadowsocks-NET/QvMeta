@@ -1,12 +1,12 @@
 # QvMeta
 
-A meta-repository for building QvPersonal statically.
+Meta repository for building Qv2ray statically.
 
 ```bash
-git clone https://github.com/moodyhunter/QvMeta.git
+git clone https://github.com/Shadowsocks-NET/QvMeta.git
 cd QvMeta
-git clone --recursive https://github.com/moodyhunter/QvPersonal.git
-git clone --recursive https://github.com/moodyhunter/Plugins.git
+git clone --recursive https://github.com/Shadowsocks-NET/Qv2ray.git
+git clone --recursive https://github.com/Shadowsocks-NET/QvPlugins.git
 cd ..
 mkdir QvMeta-build && cd QvMeta-build
 cmake ../QvMeta \
